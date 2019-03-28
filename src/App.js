@@ -1,19 +1,15 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { Component,Fragment } from 'react';
+
 import './App.css';
 
+// import CreateList from './components/content-type/createList'
+import MyComponent from './components/higherorder/MyComponent'
 class App extends Component {
-  constructor(){
-    super()
-    this.state={
-      count:0
-    }
-  }
+  
   render() {
-    console.log(this.state)
     return (
       <div className="App">
-       
+        <MyComponent name="abc"></MyComponent>
       </div>
     );
   }
